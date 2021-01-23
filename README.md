@@ -27,12 +27,12 @@ A real-time 3D object detector. The main function is object_detector/src/detecti
 Run `detection_realtime.py` to detect objects in real time.
 ### Requirements
 Test on
-*Ubuntu-18.04
-*ROS-melodic
-*CUDA-10.1
-*Pytorch 1.3
-*detectron2
-*python 3.6
+* Ubuntu-18.04
+* ROS-melodic
+* CUDA-10.1
+* Pytorch 1.3
+* detectron2
+* python 3.6
 training data
 ```
 Azure_Kinect_ROS_Driver
