@@ -25,6 +25,7 @@ If it is in an environment without a screen, before running `rectify.launch`, th
 ## object detector
 A real-time 3D object detector. The main function is object_detector/src/detection_realtime.py.  
 Run `detection_realtime.py` to detect objects in real time.
+
 ### Requirements
 Test on
 * Ubuntu-18.04
@@ -37,6 +38,7 @@ Test on
 
 And cv_bridge cannot be used with python3 and ros environment, it can be solved by building cv_bridge with python3,
 refer to [stackoverflow](https://stackoverflow.com/questions/49221565/unable-to-use-cv-bridge-with-ros-kinetic-and-python3).  
+
 ### Training data
 ```
 object_detector
@@ -51,3 +53,12 @@ object_detector
 │   │   │   ├── rgb
 ```
 Put the data into the corresponding folders, and then run the corresponding program to train the model.
+
+### Usage
+First start the Azure Kinect ROS Driver node, which will publish sensor data,
+and then run `object_detector/src/detection_realtime.py` for object detection.
+
+## object detector cpu
+This is the cpu version of object detector, which can be used on devices without gpu.
+Its training data, models, and usage methods are consistent with the gpu version.
+It is slightly different in terms of environmental requirements, Pytorch and detectron2 require cpu version, and do not require CUDA.
