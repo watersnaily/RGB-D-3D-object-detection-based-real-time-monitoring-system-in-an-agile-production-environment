@@ -18,6 +18,6 @@ Azure_Kinect_ROS_Driver
 ```
 When using this part, first install the driver according to [Azure Kinect ROS Driver](https://github.com/microsoft/Azure_Kinect_ROS_Driver),
 and then add or replace files in the corresponding file locations.  
-After installing and modifying the driver, run the `rectify.launch` file to get the corrected images and other information.
-If it is in an environment without a screen, before running the `rectify.launch` file, the DISPLAY variable need to be exported:
+After installing and modifying the driver, run the `rectify.launch` to get the corrected images and other information.
+If it is in an environment without a screen, before running the `rectify.launch`, the DISPLAY variable need to be exported like this:  
 `export DISPLAY:=0`
