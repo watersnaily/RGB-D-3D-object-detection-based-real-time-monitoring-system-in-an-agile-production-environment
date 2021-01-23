@@ -18,6 +18,30 @@ Azure_Kinect_ROS_Driver
 ```
 When using this part, first install the driver according to [Azure Kinect ROS Driver](https://github.com/microsoft/Azure_Kinect_ROS_Driver),
 and then add or replace files in the corresponding file locations.  
-After installing and modifying the driver, run the `rectify.launch` to get the corrected images and other information.
-If it is in an environment without a screen, before running the `rectify.launch`, the DISPLAY variable need to be exported like this:  
+After installing and modifying the driver, run `rectify.launch` to get the corrected images and other information.
+If it is in an environment without a screen, before running `rectify.launch`, the DISPLAY variable need to be exported like this:  
 `export DISPLAY:=0`
+
+## object detector
+A real-time 3D object detector. The main function is object_detector/src/detection_realtime.py.  
+Run `detection_realtime.py` to detect objects in real time.
+###Requirements
+Test on
+*Ubuntu-18.04
+*ROS-melodic
+*CUDA-10.1
+*Pytorch 1.3
+*detectron2
+*python 3.6
+training data
+```
+Azure_Kinect_ROS_Driver
+├── calibration
+│   ├── color_camera_calibration.txt
+│   ├── depth_camera_calibration.txt
+├── launch
+│   ├── rectify.launch
+├── src
+│   ├── camera_tf.py
+│   ├── k4a_calibration_transform_data.cpp
+```
