@@ -33,7 +33,8 @@ Test on
 * CUDA-10.1
 * Pytorch 1.6
 * detectron2
-* OpenCV 3.4.2  
+* OpenCV 3.4.2
+
 And cv_bridge cannot be used with python3 and ros environment, it can be solved by building cv_bridge with python3,
 refer to [stackoverflow](https://stackoverflow.com/questions/49221565/unable-to-use-cv-bridge-with-ros-kinetic-and-python3).  
 ### Training data
