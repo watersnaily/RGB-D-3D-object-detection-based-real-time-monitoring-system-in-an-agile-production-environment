@@ -61,4 +61,4 @@ and then run `object_detector/src/detection_realtime.py` for object detection.
 ## object detector cpu
 This is the cpu version of object detector, which can be used on devices without gpu.
 Its training data, models, and usage methods are consistent with the gpu version.
-It is slightly different in terms of environmental requirements, Pytorch and detectron2 require cpu version, and do not require CUDA.
+It is slightly different in terms of environmental requirements, Pytorch and detectron2 require cpu version, and it does not require CUDA.
