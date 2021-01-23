@@ -39,13 +39,15 @@ And cv_bridge cannot be used with python3 and ros environment, it can be solved 
 refer to [stackoverflow](https://stackoverflow.com/questions/49221565/unable-to-use-cv-bridge-with-ros-kinetic-and-python3).  
 ### Training data
 ```
-Azure_Kinect_ROS_Driver
-├── calibration
-│   ├── color_camera_calibration.txt
-│   ├── depth_camera_calibration.txt
-├── launch
-│   ├── rectify.launch
+object_detector
 ├── src
-│   ├── camera_tf.py
-│   ├── k4a_calibration_transform_data.cpp
+│   ├── train
+│   │   ├── fasterR-CNN
+│   │   │   ├── station_coco
+│   │   │   ├── station_mask
+│   │   ├── frustum_pointnets
+│   │   │   ├── sunrgbd
+│   │   ├── svm_classifier
+│   │   │   ├── rgb
 ```
+Put the data into the corresponding folders, and then run the corresponding program to train the model.
